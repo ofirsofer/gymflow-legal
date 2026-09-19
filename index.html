@@ -71,33 +71,80 @@
 <header>
   <p class="brand">GymFlow</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 6 September 2026 &middot; Ofir Sofer &middot; <a href="mailto:hello.gymflow@gmail.com">hello.gymflow@gmail.com</a></p>
+  <p class="meta">Effective 19 September 2026 &middot; Ofir Sofer &middot; <a href="mailto:hello.gymflow@gmail.com">hello.gymflow@gmail.com</a></p>
 </header>
 
 <p>GymFlow is a workout planning and tracking app for iPhone, published by <strong>Ofir Sofer</strong>. This policy explains what GymFlow does with your information.</p>
 
-<p>The short version: <strong>your training data stays on your iPhone.</strong> GymFlow has no accounts, no login, and no servers of its own. The only information that leaves your device is what is needed to process a GymFlow Pro subscription, if you choose to buy one.</p>
+<p>GymFlow's core workout-tracking features — building programs, logging workouts, and tracking progress — do not require an account, and that data is stored primarily on your iPhone. GymFlow also offers optional <strong>Coach/Athlete</strong> features: connecting with a coach, sharing training data, and receiving assigned workouts. Those features require a free GymFlow account, and if you use them, the specific data needed to support a connected coach is synced to GymFlow's cloud backend. This policy explains exactly what that means below.</p>
 
-<h2>Data stored only on your device</h2>
+<h2>Third parties and service providers</h2>
 
-<p>All of the following is stored locally on your iPhone, in the app's private storage. It is never uploaded to us, and we cannot see it:</p>
+<p>GymFlow works with the following companies to provide the app. We do not use any analytics or advertising SDKs, and there are no other third parties involved.</p>
+
+<ul>
+  <li><strong>Supabase</strong> &mdash; provides accounts, authentication, and the cloud storage behind Coach/Athlete features. See &ldquo;Account and sign-in&rdquo; and &ldquo;Coach and Athlete features&rdquo; below, and <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
+  <li><strong>RevenueCat</strong> &mdash; manages GymFlow Pro and GymFlow Coach subscriptions and determines your entitlement status. See &ldquo;Subscriptions&rdquo; below, and <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+  <li><strong>Apple</strong> &mdash; processes App Store purchases and subscriptions, and provides Sign in with Apple if you choose to use it. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+</ul>
+
+<h2>Data stored locally on your device</h2>
+
+<p>The following is stored locally on your iPhone, in the app's private storage, and is not part of GymFlow's cloud backend:</p>
 
 <ul>
   <li>Workout programs, schedules, and rotations</li>
-  <li>Workout sessions, and the sets, reps, and weights you log</li>
-  <li>Timed and cardio data, including durations and distances</li>
-  <li>Exercises, including any custom exercises you create</li>
-  <li>Progress, history, and calendar data</li>
-  <li>Your profile: display name, weight unit, weekly goal, training goal, experience level, rest timer, appearance, haptics, and language</li>
-  <li>Your profile photo, if you set one</li>
+  <li>Custom exercises you create</li>
   <li>Notification and reminder settings</li>
+  <li>App preferences: weight unit, weekly goal, training goal, experience level, rest timer, appearance, haptics, and language</li>
+  <li>A custom profile photo, if you set one &mdash; only a small bundled avatar icon, never a photo, is ever used by Coach/Athlete features (see below)</li>
 </ul>
 
-<p>We have no copy of any of it. If you lose or replace your device without transferring your data, we cannot recover it for you.</p>
+<p>If you don't use Coach/Athlete features, your completed workout sessions, progress, personal records, and body-weight and hydration logs also stay local-only. We have no copy of any of it, and if you lose or replace your device without transferring your data, we cannot recover it for you.</p>
+
+<p>If you use Coach/Athlete features, some of this same training data is synced to GymFlow's cloud backend so a connected coach can see it &mdash; see &ldquo;Coach and Athlete features&rdquo; below for exactly what, and why.</p>
+
+<h2>Account and sign-in</h2>
+
+<p>Coach/Athlete features require a free GymFlow account. Creating one is entirely optional &mdash; if you only use GymFlow to plan and log your own workouts, you never need one.</p>
+
+<p>GymFlow uses <a href="https://supabase.com/">Supabase</a> to provide accounts, authentication, and the cloud storage Coach/Athlete features depend on. When you create a GymFlow account, we store:</p>
+
+<ul>
+  <li>Your email address, if you sign in with an emailed one-time code</li>
+  <li>Your Apple ID identity, if you sign in with Sign in with Apple &mdash; Apple shares only what you approve, typically your name and an email address (or a private relay address) the first time you sign in</li>
+  <li>A unique account identifier generated by Supabase</li>
+  <li>Your display name</li>
+  <li>Whether the account has enabled Coach features</li>
+  <li>A small bundled avatar icon selection, if you choose one for a connected coach to see instead of your initials &mdash; never an actual photo</li>
+</ul>
+
+<p>This account data is stored on Supabase's infrastructure and linked to your GymFlow account. It exists to make sign-in and Coach/Athlete features work.</p>
+
+<h2>Coach and Athlete features</h2>
+
+<p>An athlete connects to a coach by entering an invite code the coach generates and shares with them. Nothing is shared with a coach until you do this &mdash; connecting is always an explicit action you take.</p>
+
+<p>Once you're connected, your coach can access:</p>
+
+<ul>
+  <li>Your workout history and session summaries</li>
+  <li>Exercises, sets, reps, weights, and training volume you've logged</li>
+  <li>Personal records and progress over time, including exercise-level history</li>
+  <li>The status and details of any workout your coach has assigned you</li>
+</ul>
+
+<p>Body weight and hydration logs are different: they are only visible to your coach if you separately turn on sharing for each one, in GymFlow. Both are off by default. Once you're connected to a coach, those entries are synced to GymFlow's backend regardless of the sharing toggle &mdash; the toggle controls only whether your coach can <em>see</em> them, so it can take effect immediately without waiting on anything to sync.</p>
+
+<div class="card">
+  <p>A coach can only ever see the athletes who have connected with them this way &mdash; never any other GymFlow user, and never by searching or browsing.</p>
+</div>
+
+<p>Disconnecting a coach (from either side, in the app) removes the coach's access to your protected data immediately, because that access is checked against the active connection every time. Historical records on GymFlow's backend may still exist after disconnecting, and a workout your coach previously assigned to you may remain visible on your own account, since it's treated as your copy of that workout once assigned. Disconnecting a coach is separate from deleting your GymFlow account &mdash; see &ldquo;Deleting your data&rdquo; below.</p>
 
 <h2>Subscriptions</h2>
 
-<p>GymFlow offers an optional paid subscription, GymFlow Pro. If you subscribe, two third parties are involved:</p>
+<p>GymFlow offers two optional paid subscriptions, GymFlow Pro and GymFlow Coach. If you subscribe to either, two third parties are involved:</p>
 
 <h3>Apple</h3>
 <p>Your purchase is processed by Apple through the App Store. Apple handles payment, billing, renewals, cancellations, and refunds. We never see your payment details. Apple's handling of your information is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
@@ -108,28 +155,27 @@
   <li>Purchase and transaction information from your App Store receipt</li>
   <li>Subscription status, such as whether it is active, when it expires, and whether it will renew</li>
   <li>The identifier of the product purchased</li>
-  <li>An anonymous app user ID generated by RevenueCat</li>
+  <li>An app user ID: anonymous if you have not created a GymFlow account, or your GymFlow account identifier if you have signed in, so a GymFlow Coach subscription can be correctly associated with your account</li>
   <li>Device and app information collected by the RevenueCat SDK as part of providing the service</li>
 </ul>
 
 <div class="card">
-  <p><strong>GymFlow does not send your workout data, profile data, or profile photo to RevenueCat, to Apple, or to anyone else.</strong> RevenueCat receives subscription information only.</p>
+  <p><strong>GymFlow does not send your workout data, profile data, or profile photo to RevenueCat, to Apple, or to anyone else.</strong> RevenueCat receives subscription information, and, if you're signed in, your GymFlow account identifier &mdash; nothing more.</p>
 </div>
 
-<p>GymFlow does not create an account for you and does not attach your name, email address, or any contact information to your subscription. The app user ID is anonymous and generated by RevenueCat.</p>
+<p>If you have not created a GymFlow account, your subscription is not attached to your name, email address, or any contact information &mdash; the app user ID is anonymous and generated by RevenueCat. If you have signed in, your subscription is associated with your GymFlow account identifier so your entitlements work correctly across the app.</p>
 
 <p>For details of how RevenueCat handles the information it receives, including retention and international transfers, see <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>. We do not restate their practices here, because they are theirs to describe and may change.</p>
 
 <h2>What GymFlow does not do</h2>
 
 <ul>
-  <li>No user accounts and no login</li>
-  <li>No GymFlow-operated cloud sync or cloud backup</li>
   <li>No advertising, and no advertising SDKs</li>
   <li>No ad tracking, and no use of the Identifier for Advertisers (IDFA)</li>
   <li>No tracking of you across other companies' apps or websites</li>
   <li>No third-party crash reporting</li>
   <li>No third-party app analytics</li>
+  <li>No account or cloud sync of any kind, unless you choose to use Coach/Athlete features</li>
   <li>We do not sell your personal information, and we do not share it for advertising</li>
 </ul>
 
@@ -144,11 +190,20 @@
 <h2>Deleting your data</h2>
 
 <ul>
-  <li><strong>Erase All GymFlow Data</strong> (Profile &rarr; Erase All GymFlow Data) permanently deletes your local workout history, programs, custom exercises, profile photo, and preferences from your device, and returns the app to a first-use state.</li>
-  <li><strong>Deleting the app</strong> removes all of GymFlow's local data from your device.</li>
+  <li><strong>Erase All GymFlow Data</strong> (Profile &rarr; Erase All GymFlow Data) permanently deletes your local workout history, programs, custom exercises, profile photo, and preferences from this device, and returns the app to a first-use state. This does not delete a GymFlow account, if you have one, or any data already synced to GymFlow's cloud backend.</li>
+  <li><strong>Delete Account</strong> (Profile &rarr; Account &rarr; Delete Account, for signed-in users) permanently deletes your GymFlow account and the Coach/Athlete cloud data associated with it &mdash; your account record, coach/athlete connections, and synced training data. It also erases GymFlow's local data on that device, the same as Erase All GymFlow Data above.</li>
+  <li><strong>Deleting the app</strong> removes all of GymFlow's local data from your device, but does not delete a GymFlow account, if you have one &mdash; use Delete Account first if you want your account and cloud data removed too.</li>
 </ul>
 
-<p>Neither action cancels a subscription. Subscriptions are managed through your Apple ID in the App Store. Neither action deletes records held by Apple or RevenueCat; to ask about information those companies hold, contact us at the address below and we will help where we can.</p>
+<p>None of these actions cancel a subscription. Subscriptions are managed through your Apple ID in the App Store, and are not automatically cancelled by Erase All GymFlow Data or Delete Account.</p>
+
+<p>If you signed in with Apple, you can additionally remove GymFlow's access under your Apple Account's Sign in with Apple settings after deleting your account &mdash; on your iPhone: Settings &rarr; your name &rarr; Sign in with Apple &rarr; GymFlow &rarr; Stop Using Apple ID. This is optional, and separate from deleting your GymFlow account.</p>
+
+<p>Neither Erase All GymFlow Data nor Delete Account affects records held by Apple or RevenueCat, who retain information according to their own practices; to ask about information those companies hold, contact us at the address below and we will help where we can.</p>
+
+<h2>Data retention</h2>
+
+<p>We keep the account and Coach/Athlete data described above for as long as your GymFlow account exists and it's needed to provide those features &mdash; there is no separate fixed retention period. Deleting your GymFlow account removes the account and cloud data the Delete Account flow handles, described above. Apple and RevenueCat retain the information they separately hold according to their own practices; see their privacy policies linked above.</p>
 
 <h2>Age</h2>
 
@@ -180,7 +235,7 @@
 Ofir Sofer &middot; <a href="mailto:hello.gymflow@gmail.com">hello.gymflow@gmail.com</a></p>
 
 <footer>
-  <p>GymFlow &middot; Privacy Policy &middot; Effective 6 September 2026</p>
+  <p>GymFlow &middot; Privacy Policy &middot; Effective 19 September 2026</p>
 </footer>
 
 </div>
