@@ -71,21 +71,23 @@
 <header>
   <p class="brand">GymFlow</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 19 September 2026 &middot; Ofir Sofer &middot; <a href="mailto:hello.gymflow@gmail.com">hello.gymflow@gmail.com</a></p>
+  <p class="meta">Effective 15 October 2026 &middot; Ofir Sofer &middot; <a href="mailto:hello.gymflow@gmail.com">hello.gymflow@gmail.com</a></p>
 </header>
 
-<p>GymFlow is a workout planning and tracking app for iPhone, published by <strong>Ofir Sofer</strong>. This policy explains what GymFlow does with your information.</p>
+<p>GymFlow is a workout and nutrition tracking app for iPhone, published by <strong>Ofir Sofer</strong>. This policy explains what GymFlow does with your information.</p>
 
-<p>GymFlow's core workout-tracking features — building programs, logging workouts, and tracking progress — do not require an account, and that data is stored primarily on your iPhone. GymFlow also offers optional <strong>Coach/Athlete</strong> features: connecting with a coach, sharing training data, and receiving assigned workouts. Those features require a free GymFlow account, and if you use them, the specific data needed to support a connected coach is synced to GymFlow's cloud backend. This policy explains exactly what that means below.</p>
+<p>GymFlow's core features — building programs, logging workouts, tracking progress, and logging food and nutrition — do not require an account, and that data is stored primarily on your iPhone. GymFlow also offers optional <strong>Coach/Athlete</strong> features: connecting with a coach, sharing training data, and receiving assigned workouts. Those features require a free GymFlow account, and if you use them, the specific data needed to support a connected coach is synced to GymFlow's cloud backend. This policy explains exactly what that means below.</p>
 
 <h2>Third parties and service providers</h2>
 
-<p>GymFlow works with the following companies to provide the app. We do not use any analytics or advertising SDKs, and there are no other third parties involved.</p>
+<p>GymFlow works with the following companies and services to provide the app. We do not use any analytics or advertising SDKs, and there are no other third parties involved.</p>
 
 <ul>
   <li><strong>Supabase</strong> &mdash; provides accounts, authentication, and the cloud storage behind Coach/Athlete features. See &ldquo;Account and sign-in&rdquo; and &ldquo;Coach and Athlete features&rdquo; below, and <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
   <li><strong>RevenueCat</strong> &mdash; manages GymFlow Pro and GymFlow Coach subscriptions and determines your entitlement status. See &ldquo;Subscriptions&rdquo; below, and <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
   <li><strong>Apple</strong> &mdash; processes App Store purchases and subscriptions, and provides Sign in with Apple if you choose to use it. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+  <li><strong>OpenAI</strong> &mdash; identifies foods in the meal photos you choose to analyze with Photo Scan. See &ldquo;Nutrition and Photo Scan&rdquo; below, and <a href="https://openai.com/policies/privacy-policy/">OpenAI's Privacy Policy</a>.</li>
+  <li><strong>Open Food Facts</strong> and <strong>USDA FoodData Central</strong> &mdash; public food databases GymFlow searches to find nutrition information for foods and barcodes. See &ldquo;Nutrition and Photo Scan&rdquo; below.</li>
 </ul>
 
 <h2>Data stored locally on your device</h2>
@@ -94,15 +96,28 @@
 
 <ul>
   <li>Workout programs, schedules, and rotations</li>
+  <li>Your food diary, nutrition targets, favorite foods, and the meal photos you save to your diary from Photo Scan</li>
   <li>Custom exercises you create</li>
   <li>Notification and reminder settings</li>
-  <li>App preferences: weight unit, weekly goal, training goal, experience level, rest timer, appearance, haptics, and language</li>
+  <li>App preferences: weight unit, weekly goal, training goal, experience level, nutrition goal and activity level, rest timer, appearance, haptics, and language</li>
   <li>A custom profile photo, if you set one &mdash; only a small bundled avatar icon, never a photo, is ever used by Coach/Athlete features (see below)</li>
 </ul>
 
-<p>If you don't use Coach/Athlete features, your completed workout sessions, progress, personal records, and body-weight and hydration logs also stay local-only. We have no copy of any of it, and if you lose or replace your device without transferring your data, we cannot recover it for you.</p>
+<p>If you don't use Coach/Athlete features, your completed workout sessions, progress, personal records, and body-weight and hydration logs also stay local-only. Your food diary and nutrition targets stay local-only unless you turn on nutrition sharing with a coach (see below). We have no copy of any of it, and if you lose or replace your device without transferring your data, we cannot recover it for you.</p>
 
 <p>If you use Coach/Athlete features, some of this same training data is synced to GymFlow's cloud backend so a connected coach can see it &mdash; see &ldquo;Coach and Athlete features&rdquo; below for exactly what, and why.</p>
+
+<h2>Nutrition and Photo Scan</h2>
+
+<p>Foods you log, your nutrition targets, and your diary are stored on your iPhone (see &ldquo;Data stored locally on your device&rdquo; above).</p>
+
+<p>When you search for a food or scan a barcode, GymFlow sends what you searched for, or the barcode, to <a href="https://world.openfoodfacts.org/">Open Food Facts</a> and to the USDA's <a href="https://fdc.nal.usda.gov/">FoodData Central</a> database (through GymFlow's server) to find nutrition information. Only the search text or barcode is sent &mdash; never your diary.</p>
+
+<p><strong>Photo Scan</strong> is optional and only runs when you start it. Before your first scan, GymFlow tells you that your photo will be sent to OpenAI and asks you to continue; if you choose Not Now, nothing is sent. When you scan, the meal photo you take or choose is sent through GymFlow's server to <a href="https://openai.com/">OpenAI</a>, which identifies the foods in it and estimates their nutrition, and the result is returned to the app for you to review before anything is added to your diary. Photos are sent only when you use Photo Scan.</p>
+
+<p>GymFlow's server does not store the photo or the scan results. It keeps a record of each scan request &mdash; an identifier, when it was made, and whether it succeeded &mdash; to count your scan allowance. If you aren't signed in to a GymFlow account, Photo Scan creates an anonymous account identifier for this purpose. For how OpenAI handles the photos it receives, see <a href="https://openai.com/policies/privacy-policy/">OpenAI's Privacy Policy</a>.</p>
+
+<p>Erase All GymFlow Data also resets your Photo Scan choice, so GymFlow asks again before your next scan.</p>
 
 <h2>Account and sign-in</h2>
 
@@ -135,6 +150,8 @@
 </ul>
 
 <p>Body weight and hydration logs are different: they are only visible to your coach if you separately turn on sharing for each one, in GymFlow. Both are off by default. Once you're connected to a coach, those entries are synced to GymFlow's backend regardless of the sharing toggle &mdash; the toggle controls only whether your coach can <em>see</em> them, so it can take effect immediately without waiting on anything to sync.</p>
+
+<p>Nutrition sharing works differently again: it is off by default, you turn it on separately for each coach, and nothing about your nutrition leaves your device until you do. When it's on, GymFlow uploads only, for each day you logged food: your total calories, protein, carbohydrates and fat, how many foods you logged that day, and the nutrition target in effect that day (and the date it took effect). Food names, brands, individual meals, meal times, notes, barcodes and meal photos are <strong>never</strong> shared with your coach. Turning nutrition sharing off for your last coach, or disconnecting that coach, deletes the shared nutrition data from GymFlow's backend.</p>
 
 <div class="card">
   <p>A coach can only ever see the athletes who have connected with them this way &mdash; never any other GymFlow user, and never by searching or browsing.</p>
@@ -175,7 +192,7 @@
   <li>No tracking of you across other companies' apps or websites</li>
   <li>No third-party crash reporting</li>
   <li>No third-party app analytics</li>
-  <li>No account or cloud sync of any kind, unless you choose to use Coach/Athlete features</li>
+  <li>No cloud sync of your workout or nutrition data, unless you choose to use Coach/Athlete features (and, for nutrition, turn on sharing)</li>
   <li>We do not sell your personal information, and we do not share it for advertising</li>
 </ul>
 
@@ -190,7 +207,7 @@
 <h2>Deleting your data</h2>
 
 <ul>
-  <li><strong>Erase All GymFlow Data</strong> (Profile &rarr; Erase All GymFlow Data) permanently deletes your local workout history, programs, custom exercises, profile photo, and preferences from this device, and returns the app to a first-use state. This does not delete a GymFlow account, if you have one, or any data already synced to GymFlow's cloud backend.</li>
+  <li><strong>Erase All GymFlow Data</strong> (Profile &rarr; Erase All GymFlow Data) permanently deletes your local workout history, programs, custom exercises, food diary, nutrition targets, saved meal photos, profile photo, and preferences from this device, resets your Photo Scan choice, and returns the app to a first-use state. This does not delete a GymFlow account, if you have one, or any data already synced to GymFlow's cloud backend.</li>
   <li><strong>Delete Account</strong> (Profile &rarr; Account &rarr; Delete Account, for signed-in users) permanently deletes your GymFlow account and the Coach/Athlete cloud data associated with it &mdash; your account record, coach/athlete connections, and synced training data. It also erases GymFlow's local data on that device, the same as Erase All GymFlow Data above.</li>
   <li><strong>Deleting the app</strong> removes all of GymFlow's local data from your device, but does not delete a GymFlow account, if you have one &mdash; use Delete Account first if you want your account and cloud data removed too.</li>
 </ul>
